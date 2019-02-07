@@ -8,8 +8,11 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-  // insert code here...
-  printf("Hello, World!\n");
+int main(){
+  unsigned int zeroInt = 0;
+  int maxInt = ~zeroInt>>1;
+  int minInt = (~zeroInt>>1)+1;
+  printf("The max int val is: %d\n", maxInt);
+  printf("The min int val is: %d\n", minInt);
   return 0;
 }
